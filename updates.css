@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f5abab; /* Background color */
+    color: #333; /* Text color */
+}
+
+/* Image Section */
+.image-section {
+    position: relative; /* Position for absolute positioning of the header text */
+    text-align: center; /* Center align the header text */
+}
+
+.image-section img {
+    width: 1200px; /* Set image width */
+    height: 400px; /* Set image height */
+    object-fit: cover; /* Ensure the image covers the specified dimensions without distortion */
+}
+
+.image-section h1 {
+    position: absolute; /* Position header over the image */
+    top: 20px; /* Positioning from the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    color: rgb(30, 1, 93); /* Text color */
+    font-size: 3rem; /* Font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+}
+
+/* Content Section */
+.content-section {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center the content */
+    padding: 40px; /* Padding around the section */
+}
+
+/* Upcoming Events, Daily Schedule, and Lunch Timetable Section */
+.upcoming-events,
+.daily-schedule,
+.lunch-timetable {
+    text-align: center; /* Center text within this div */
+    background-color: #fff; /* Background color */
+    padding: 20px; /* Inner padding */
+    border-radius: 40px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    width: 60%; /* Width of the section */
+    border: 2px solid #333; /* Add border to the sections */
+}
+
+/* Headings */
+h2 {
+    color: #333; /* Heading color */
+    margin-bottom: 20px; /* Margin below headings */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column; /* Stack sections on smaller screens */
+        padding: 20px; /* Reduced padding */
+    }
+
+    .upcoming-events,
+    .daily-schedule,
+    .lunch-timetable {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .image-section img {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

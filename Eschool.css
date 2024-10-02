@@ -1,0 +1,226 @@
+/* General CSS Reset */               
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Change to Arial for a different look */
+    background-color: #e9d7b8; /* White background for the body */
+}
+
+/* Container for centralizing content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #e9e0cd, #d4c7ad); /* Lighter gradient */
+    padding: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 100;
+}
+
+/* Logo styling */
+.logo img {
+    width: 200px;
+    height: 200px; /* Ensure the logo maintains a consistent size */
+    border-radius: 50%; /* Makes the logo circular */
+    object-fit: cover; /* Ensures the logo fits within the circular frame */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    border: 3px solid #fff; /* Optional border around the logo */
+}  
+
+/* Navigation Menu styling */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Dark text for contrast */
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #9197d8;
+    background-color: #f4f4f4; /* Light background on hover */
+    border-radius: 4px;
+}
+
+/* CTA Button Styling */
+.cta-button {
+    background-color: #ff5722; /* Call to action color */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+/* Main Section Styling */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the top */
+    padding: 60px;
+    background-color: #b6b7ee; /* Light background for the section */
+}
+
+/* Content Container for Flex Layout */
+.content-container {
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    align-items: flex-start;
+}
+
+/* Left Side Text Box */
+.text-box {
+    max-width: 50%;
+}
+
+.text-box h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #620303; /* Dark heading color */
+}
+
+.text-box p {
+    font-size: 20px; /* Increased font size */
+    line-height: 1.8; /* Increased line height for readability */
+    margin: 20px 0; /* Added margin for spacing */
+    color: #0f0303; /* Dark gray for readability */
+}
+
+/* Right Side Image Box */
+.image-box {
+    max-width: 45%; /* Adjust width to fit better */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+}
+
+.image-box img {
+    max-width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(3, 47, 81, 0.836);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .text-box, .image-box {
+        max-width: 100%;
+    }
+
+    .text-box {
+        margin-bottom: 30px;
+    }
+}
+
+/* Features Section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 55px; /* Adjust this value for space above features */
+    padding-bottom: 55px;
+    padding-left: 80px;
+}
+
+.feature-box {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 70%;
+    aspect-ratio: 1 / 1; /* Makes the box square */
+    transition: transform 0.2s; /* Adds a hover effect */
+}
+
+.feature-box:hover {
+    transform: scale(1.05); /* Slightly enlarges the box on hover */
+}
+
+/* Heading styles */
+.feature-box h3 {
+    margin: 40px 0;
+    color: #ffffff; /* White color for headings */
+}
+
+.values_heading{
+    padding-top: 30px;
+    color: #d34141;
+    text-align: center;
+}
+
+/* Specific style for Our Core Values heading */
+.core-values-heading {
+    font-size: 50px; /* Adjust the size of the heading for Our Core Values here */
+}
+
+/* Paragraph styles */
+.feature-box p {
+    font-size: 14px;
+    color: #333333; /* Dark gray for info text */
+}
+
+/* Icon styles */
+.icon {
+    font-size: 30px; /* Adjust icon size */
+}
+
+/* Add colors to specific boxes */
+.core-values {
+    background-color: #ecdf6b; /* Yellow */
+}
+
+.communication {
+    background-color: #2196f3; /* Blue */
+}
+
+.tracking {
+    background-color: #4caf50; /* Green */
+}
+
+.notices {
+    background-color: #ff5722; /* Orange */
+}
+
+.resources {
+    background-color: #e655ff; /* Purple */
+}
+
+.payments {
+    background-color: #f44336; /* Red */
+}

@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5abab;
+    color: #333;
+}
+
+/* Header Image with Heading Overlay */
+.header-image {
+    position: relative;
+    text-align: center;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+}
+
+.heading-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(18, 2, 79);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.intro {
+    padding: 20px;
+    color: #020202;
+    text-align: center;
+    font-size: 2em;
+}
+
+.activities {
+    padding: 20px;
+}
+
+/* Activity Row */
+.activity-row {
+    display: flex;
+    justify-content: center; /* Center the boxes */
+    margin-bottom: 40px;
+}
+
+/* Activity Box */
+.activity {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 40%; /* Width of the boxes */
+    margin: 0 50px; /* Add side margins for spacing */
+}
+
+.activity h3 {
+    color: #00796b;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.activity p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+/* Image for Activities */
+.activity img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}

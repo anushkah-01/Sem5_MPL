@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - EduPro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="updates.css">
+    <style>
+        /* CSS for zoom buttons */
+        .zoom-buttons {
+            display: flex;
+            justify-content: center; /* Center align buttons */
+            margin: 20px 0; /* Margin above and below buttons */
+        }
+
+        .zoom-buttons button {
+            background-color: #ff6347; /* Button color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            padding: 10px 20px; /* Padding */
+            margin: 0 10px; /* Space between buttons */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            transition: background-color 0.3s ease; /* Transition for hover effect */
+        }
+
+        .zoom-buttons button:hover {
+            background-color: #ff4500; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Image Section -->
+    <section class="image-section">
+        <img src="360_F_91469952_ZThAYcO8L6IjoT2M1tvyKBNR8ivvMEEm.jpg" alt="Top Banner" style="width: 1550px; height: 400px;">
+        <h1>Upcoming Events And Timetable of The Students</h1>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="upcoming-events">
+            <h2>Upcoming Events and Holidays (October - December 2024)</h2> <!-- Centered Heading -->
+            <img id="event-image" src="C:\Users\91961\OneDrive\Documents\HTML\Screenshot events.png" alt="Upcoming Events" style="max-width: 100%; height: auto; border-radius: 10px;"/> <!-- Added Image -->
+            <div class="zoom-buttons"> <!-- Zoom Buttons -->
+                <button onclick="zoomIn()">Zoom In</button>
+                <button onclick="zoomOut()">Zoom Out</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Schedule Section -->
+    <section class="content-section">
+        <div class="daily-schedule">
+            <h2>DAILY SCHEDULE</h2> <!-- Centered Heading -->
+            <img id="schedule-image" src="C:\Users\91961\OneDrive\Documents\HTML\Screenshot daily scedule.png" alt="Daily Schedule" style="max-width: 100%; height: auto; border-radius: 10px;"/> <!-- Added Image -->
+            <div class="zoom-buttons"> <!-- Zoom Buttons -->
+                <button onclick="zoomInSchedule()">Zoom In</button>
+                <button onclick="zoomOutSchedule()">Zoom Out</button>
+            </div>
+        </div>
+    </section>
+
+     <!-- Lunch Timetable Section -->
+     <section class="content-section">
+        <div class="lunch-timetable">
+            <h2>LUNCH TIMETABLE</h2> <!-- Centered Heading -->
+            <img id="schedule-image" src="C:\Users\91961\OneDrive\Documents\HTML\Screenshot lunch time table.png" alt="Daily Schedule" style="max-width: 100%; height: auto; border-radius: 10px;"/> <!-- Added Image -->
+            <div class="zoom-buttons"> <!-- Zoom Buttons -->
+                <button onclick="zoomInSchedule()">Zoom In</button>
+                <button onclick="zoomOutSchedule()">Zoom Out</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for zoom functionality
+        let scale = 1; // Initial scale
+
+        function zoomIn() {
+            scale += 0.1; // Increase scale
+            document.getElementById('event-image').style.transform = `scale(${scale})`; // Apply scaling
+        }
+
+        function zoomOut() {
+            if (scale > 1) {
+                scale -= 0.1; // Decrease scale
+                document.getElementById('event-image').style.transform = `scale(${scale})`; // Apply scaling
+            }
+        }
+
+        // JavaScript for Daily Schedule zoom functionality
+        let scheduleScale = 1; // Initial scale for schedule
+
+        function zoomInSchedule() {
+            scheduleScale += 0.1; // Increase scale
+            document.getElementById('schedule-image').style.transform = `scale(${scheduleScale})`; // Apply scaling
+        }
+
+        function zoomOutSchedule() {
+            if (scheduleScale > 1) {
+                scheduleScale -= 0.1; // Decrease scale
+                document.getElementById('schedule-image').style.transform = `scale(${scheduleScale})`; // Apply scaling
+            }
+        }
+    </script>
+</body>
+</html>
